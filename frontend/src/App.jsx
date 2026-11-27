@@ -12,6 +12,10 @@ import Dashboard from './pages/dashboard'
 import Calender from './pages/calender'
 import Settings from './pages/settings'
 import Register from './pages/register'
+import Admin from './pages/admin/adminlayout'
+import Adminuserdetails from './pages/admin/userdetails'
+import Adminsettings from './pages/admin/settings'
+import Admindashboard from './pages/admin/dashboard'
 
 
 function App() {
@@ -28,6 +32,11 @@ function App() {
         <Route path ="/calender" element={<Calender/>}/>
         <Route path ="/settings" element={<Settings/>}/>
         <Route path ="/register" element={<Register/>}/>
+        <Route path ="/admin" element={<Admin/>}>
+           <Route path ="admindashboard" element={<Admindashboard/>}/>
+           <Route path ="adminuserdetails" element={<Adminuserdetails/>}/>
+           <Route path ="adminsettings" element={<Adminsettings/>}/>
+        </Route>
 
       </Routes>
       </BrowserRouter>
