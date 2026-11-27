@@ -18,6 +18,7 @@ function Register() {
     return(
         <div className ="h-screen bg-gray-100 flex justify-center items-center">
             <form onSubmit={handleSubmit(onSubmit1)} className="bg-white p-8 rounded-lg shadow-md w-80 flex flex-col gap-3">
+                 <h1 className="font-bold text-center">REGISTER</h1>
             <input type="text" placeholder="Enter your name:" {...register("name")}
             className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"/>
             <p className="text-red-500 text-sm">{errors.name?.message}
