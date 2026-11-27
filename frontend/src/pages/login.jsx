@@ -41,7 +41,7 @@ function Login() {
     }
   }
   return(
-  <div>
+  <div className="h-screen bg-white-100 flex justify-center items-centre">
     {/*}
     <div>
       <label>Email:</label>
@@ -54,12 +54,14 @@ function Login() {
       <button type="submit" onClick={()=>print()}>Submit</button>
     </div>
     */}
-    <form onSubmit={formsubmit}>
-      <input type="text" placeholder="Enter your username" required name="username" onChange={handlechange}></input>
+    <form onSubmit={formsubmit}className="bg-white p-2 rounded-lg shadow-md w-80 flex flex-col gap-3">
+      <input type="text" placeholder="Enter your username" required name="username" onChange={handlechange}
+      className="border-border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"></input>
       <br></br>
-      <input type="password" placeholder="Enter your password" required name="password" onChange={handlechange}></input>
+      <input type="password" placeholder="Enter your password" required name="password" onChange={handlechange}
+      className="border-border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"></input>
       <br></br>
-      <button type="submit">Submit</button>
+      <button type="submit" className="bg-blue-500 text-black p-2 rounded hover:bg-green-700 font-semibold">Submit</button>
     </form>
   </div>
   )
