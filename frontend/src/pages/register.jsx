@@ -17,22 +17,22 @@ function Register() {
     }
     return(
         <div className ="h-screen bg-gray-100 flex justify-center items-center">
-            <form onSubmit={handleSubmit(onSubmit1)} className="bg-white p-8 rounded-lg shadow-md w-80 flex flex-col gap-3">
-                 <h1 className="font-bold text-center">REGISTER</h1>
+            <form onSubmit={handleSubmit(onSubmit1)} className="bg-white p-8 rounded-lg shadow-md w-80 flex flex-col ">
+                 <h1 className="font-bold text-center mb-3">REGISTER</h1>
             <input type="text" placeholder="Enter your name:" {...register("name")}
-            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"/>
+            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400 mb-3"/>
             <p className="text-red-500 text-sm">{errors.name?.message}
             </p>
             <input type="email" placeholder="Enter your email:" {...register("email")}
-            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"/>
+            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400 mb-3"/>
             <p className="text-red-500 text-sm">
                 {errors.email?.message}</p>
             <input type="password" placeholder="Enter your password:" {...register("password")}
-            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"/>
+            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400 mb-3"/>
             <p className="text-red-500 text-sm">
                 {errors.password?.message}</p>
             <input type="number" placeholder="Enter your age:" {...register("age")}
-            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400"/>
+            className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-black-400 mb-3"/>
             <p className="text-red-500 text-sm">
                 {errors.age?.message}</p>
             <button type="submit" className="bg-blue-500 text-black p-2 rounded hover:bg-green-700 font-semibold">Button</button>

@@ -11,7 +11,7 @@ function Login() {
   })
   //const location=useLocation();
   const [registerdata,setRegisterdata]=useState({
-    name:" ",
+    username:" ",
     password:" "
   })
   const navigate=useNavigate();
@@ -32,7 +32,7 @@ function Login() {
     event.preventDefault();
     console.log("Login data",logindata)
     console.log("Register data",registerdata)
-    if(logindata.username===registerdata.name && logindata.password===registerdata.password){
+    if(logindata.username===registerdata.username && logindata.password===registerdata.password){
       console.log("if success")
       navigate("/dashboard",{state:logindata})
     }
